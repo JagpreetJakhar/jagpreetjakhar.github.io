@@ -1,3 +1,3 @@
 # my_portfolio
-Made using the React project Tutorial from freecodecamp on youtube.
-from -Slobodan
+Made using Html,Css,Javascript and React from freecodecamp on youtube.
+from -Slobodan and Kevin Powell

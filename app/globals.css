@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MesloLGMDZNerdFontMono';
+  src: url('/fonts/MesloLGMDZNerdFontMono-Regular.ttf') format('truetype'); /* Correct format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-meslo-mono: 'MesloLGMDZNerdFontMono';
+}
+
+body {
+  font-family: var(--font-meslo-mono), monospace;
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}

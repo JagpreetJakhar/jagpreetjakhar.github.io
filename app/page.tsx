@@ -1,46 +1,19 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
-import About from "@/components/About/About";
-import Experience from "@/components/Experience/Experience";
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
 import Projects from "@/components/Projects/Projects";
 import Skills from "@/components/Skills/Skills";
 import Contact from "@/components/Contact/Contact";
-
-
+import About from "@/components/About/About";
+import Experience from "@/components/Experience/Experience";
 export default function Home() {
-
-  const [theme, setTheme] = useState("light");
-
-  const toggleTheme = () => {
-    if (theme === "light") {
-      localStorage.setItem("theme", "dark");
-      setTheme("dark");
-    } else {
-      localStorage.setItem("theme", "light");
-      setTheme("light");
-    }
-  };
-
-  useEffect(() => {
-    const currentTheme = localStorage.getItem("theme");
-    if (currentTheme) {
-      setTheme(currentTheme);
-    }
-  }, []);
-
   return (
-      <div className="app" id={`${theme}`}>
-      <main>
-        <Navbar toggleTheme={toggleTheme} theme={theme} />
-        <About />
+    <div>
+      <About />
         <Projects />
         <Experience />
         <Skills />
         <Contact />
-      </main>
-      <Footer />
-    </div>
+     </div>
  );
 }

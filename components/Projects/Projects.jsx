@@ -2,7 +2,7 @@ import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "./Projects.css";
 import { projects } from "../../data/portfolio";
-import getColorClass from "../../utils/getColorClass";
+import getColorClass from "../../lib/utils/getColorClass";
 const Projects = () => {
   const { title, personalProjects } = projects;
   return (

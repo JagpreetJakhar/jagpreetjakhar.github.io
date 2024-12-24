@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import { skills } from "../../data/portfolio";
-import getColorClass from "../../utils/getColorClass";
+import getColorClass from "../../lib/utils/getColorClass";
 const Skills = () => {
   const { title, mySkills } = skills;
   return (

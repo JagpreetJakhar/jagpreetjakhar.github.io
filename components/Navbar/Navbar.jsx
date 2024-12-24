@@ -1,18 +1,21 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { MdLightMode, MdNightlight, MdMenu, MdClose } from "react-icons/md";
+import { useTheme } from "@/context/ThemeContext";
 
-const mobileMenu = (toggleTheme, theme) => {
+const MobileMenu = () => {
+  const { theme, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
     <header className="mobile-menu">
-      <div className="mobile-menu-toggle" onClick={toggle}>
+      <div className="mobile-menu-toggle" onClick={toggleMenu}>
         <MdMenu size={30} />
       </div>
       {isOpen && (
-        <div className="mobile-menu-content" onClick={toggle}>
+        <div className="mobile-menu-content" onClick={toggleMenu}>
           <ul>
             <li>
               <div className="mobile-menu-toggle-close">
@@ -47,16 +50,18 @@ const mobileMenu = (toggleTheme, theme) => {
   );
 };
 
-const Navbar = ({ toggleTheme, theme }) => {
-  const logo = "{SS}.";
+const Navbar = () => {
+  const { theme, toggleTheme } = useTheme();
+  const logo = "{}.";
+
   return (
     <header>
       <nav className="navbar">
         <div className="logo">
           <h1>{logo}</h1>
         </div>
-        {mobileMenu(toggleTheme, theme)}
-        {/* desktop menu */}
+        <MobileMenu />
+        {/* Desktop Menu */}
         <ul className="nav-list">
           <li>
             <a href="#projects">Projects</a>

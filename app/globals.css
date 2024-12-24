@@ -5,30 +5,69 @@
 @font-face {
   font-family: 'MesloLGMDZNerdFontMono';
   src: url('/fonts/MesloLGMDZNerdFontMono-Regular.ttf') format('truetype'); /* Correct format */
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
 }
 
 :root {
   --font-meslo-mono: 'MesloLGMDZNerdFontMono';
+  /* Kanagawa Lotus Light Theme */
+  --light-theme-background: #dcd7ba; /* Gentle cream */
+  --light-theme-color: black; /* Warm taupe */
+  --light-theme-border: #dcd3c5; /* Soft beige-grey */
+  --light-theme-accent-primary: #846b8c; /* Subtle plum */
+  --light-theme-accent-secondary: #8296c8; /* Muted blue */
+  --light-theme-highlight: #506d79; /* Deep teal */
+
+  /* Kanagawa Dark Theme */
+  --dark-theme-background: #2C2C2B; /* Deep indigo */
+  --dark-theme-color: #D3D3D3; /* Warm beige */
+  --dark-theme-border: #54546d; /* Smoky purple-grey */
+  --dark-theme-accent-primary: #957fb8; /* Subdued purple */
+  --dark-theme-accent-secondary: #7e9cd8; /* Gentle blue */
+  --dark-theme-highlight: #e46876; /* Rose red */
 }
 
+/* Apply theme styles based on the `data-theme` attribute on the <html> element */
+html[data-theme="light"] {
+  background-color: var(--light-theme-background);
+  color: var(--light-theme-color);
+  border: 1px solid var(--light-theme-border);
+}
+
+html[data-theme="dark"] {
+  background-color: var(--dark-theme-background);
+  color: var(--dark-theme-color);
+  border: 1px solid var(--dark-theme-border);
+}
+
+/* Body and Font */
 body {
   font-family: var(--font-meslo-mono), monospace;
 }
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+/* Button Example */
+button {
+  font-family: var(--font-meslo-mono), monospace;
+  border: 1px solid var(--light-theme-border);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+button.light {
+  background-color: var(--light-theme-accent-primary);
+  color: var(--light-theme-color);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
+button.light:hover {
+  background-color: var(--light-theme-highlight);
+}
+
+button.dark {
+  background-color: var(--dark-theme-accent-primary);
+  color: var(--dark-theme-color);
+}
+
+button.dark:hover {
+  background-color: var(--dark-theme-highlight);
 }

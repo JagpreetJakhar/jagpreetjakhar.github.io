@@ -40,6 +40,80 @@
 .skills-container-grid .skills-card .skills-stack span {
   margin-right: 10px;
   margin-bottom: 10px;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Example color classes for skills */
+.python {
+  background-color: #306998; /* Python color */
+  color: white;
+}
+
+.pyspark {
+  background-color: #e25c5b; /* PySpark color */
+  color: white;
+}
+
+.javascript {
+  background-color: #f0db4f; /* JavaScript color */
+  color: black;
+}
+
+.typescript {
+  background-color: #3178c6; /* TypeScript color */
+  color: white;
+}
+
+.reactjs {
+  background-color: #61dbfb; /* React.js color */
+  color: black;
+}
+
+.nextjs {
+  background-color: #000000; /* Next.js color */
+  color: white;
+}
+
+.nodejs {
+  background-color: #8cc84b; /* Node.js color */
+  color: white;
+}
+
+.expressjs {
+  background-color: #000000; /* Express.js color */
+  color: white;
+}
+
+.postgresql {
+  background-color: #336791; /* PostgreSQL color */
+  color: white;
+}
+
+.sqlite {
+  background-color: #003b49; /* SQLite color */
+  color: white;
+}
+
+.pytorch {
+  background-color: #ee4c2c; /* PyTorch color */
+  color: white;
+}
+
+.opencv {
+  background-color: #5c5c5c; /* OpenCV color */
+  color: white;
+}
+
+.aws {
+  background-color: #ff9900; /* AWS color */
+  color: black;
+}
+
+.tailwindcss {
+  background-color: #06b6d4; /* Tailwind CSS color */
+  color: black;
 }
 
 /* mobile phones */

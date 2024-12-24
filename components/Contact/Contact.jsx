@@ -5,12 +5,12 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
       <div className="contact-me">
-        <h1>
-          <a href="mailto:shehab.shalan@hotmail.com">
-            Contact me
-            <RiSendPlaneFill className="icon" size={30} />
+        <h1 >
+          <a href="mailto:jagpreetjakhar94@gmail.com">
+            Contact me  
           </a>
         </h1>
+        <RiSendPlaneFill size={30} />
       </div>
     </section>
   );

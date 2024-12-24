@@ -1,51 +1,28 @@
 const about = {
-  title: "Hi 👋 , I am Shehab Shalan",
+  title: "Hi 👋 , I am Jagpreet Jakhar",
   description:
-    "I am a full stack developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi incidunt, repellendus doloribus voluptates debitis porro ut illo eaque repudiandae corporis tenetur unde quae consectetur obcaecati iusto nostrum expedita iste!",
-  github: "https://github.com/shehabshalan",
-  linkedin: "https://www.linkedin.com/in/shehabshalan/",
-  cv: "#",
+    "I'm a Software Engineer with experience in creating and implementing front and back-end web applications,\
+   with an interest Machine Learning  in Non-Linear Dynamical Systems and Computer Vision.\
+  I have a Master's degree with distinction in Cybersecurity and Artificial Intelligence from the University of Sheffield, England",
+  github: "https://github.com/JagpreetJakhar",
+  linkedin: "https://www.linkedin.com/in/jagpreetjakhar/",
+  cv: "/resume.pdf",
 };
 
 const projects = {
   title: "Projects",
   personalProjects: [
     {
-      title: "Youtube Clone",
+      title: "Neural ODEs for Domain Wall Analysis",
       short:
         "Features Firebase authentication, video upload, and video streaming.",
       description:
-        "it is a video-sharing app built using Firebase for authentication, and data persistence. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi incidunt, repellendus doloribus voluptates debitis porro ut illo eaque repudiandae corporis tenetur unde quae consectetur obcaecati iusto nostrum expedita iste! ",
-      technologies: ["#React.js", "#MUI", "#Firebase"],
-      github: "#",
+        "The study focuses on three distinct physical systems: the double pendulum, the Lorenz attractor, and the magnetic \
+ domain wall problem. ",
+      technologies: ["#Python", "#PyTorch", "#PySpark", "#HPC"],
+      github: "https://github.com/JagpreetJakhar/Dissertation",
       demo: "#",
-    },
-    {
-      title: "Next.js Blog",
-      short:
-        "Features JWT authentication, headless CMS, and full CRUD operations.",
-      description:
-        "it is a Next.js blog site built using Strapi (a headless CMS). Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi incidunt, repellendus doloribus voluptates debitis porro ut illo eaque repudiandae corporis tenetur unde quae consectetur obcaecati iusto nostrum expedita iste! and also lorem",
-      technologies: ["#Next.js", "#MUI", "#Strapi", "#JWT"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "File Sharing App",
-      short:
-        "Features multi-file upload, sharing links with expiration and document preview.",
-      description:
-        "it is a file sharing app built using the MERN stack. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi incidunt, repellendus doloribus voluptates debitis porro ut illo eaque repudiandae corporis tenetur unde quae consectetur obcaecati iusto nostrum expedita iste!",
-      technologies: [
-        "#React.js",
-        "#MUI",
-        "#Express.js",
-        "#Node.js",
-        "#MongoDB",
-      ],
-      github: "#",
-      demo: "#",
-    },
+    }
   ],
 };
 
@@ -53,11 +30,36 @@ const experience = {
   title: "Experience",
   experiences: [
     {
-      title: "Frontend Developer",
-      company: "XYZ Company",
-      duration: "Mar 2021 - Present",
+      title: "Graduate Teaching Assistant- Big Data Analytics",
+      company: "University of Sheffield",
+      duration: "Jan 2024-Aug 2024",
       description:
-        "I am currently working as a frontend developer at XYZ Company. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi incidunt, repellendus doloribus voluptates debitis porro ut illo eaque repudiandae corporis tenetur unde quae consectetur obcaecati iusto nostrum expedita iste! ",
+        "Provided hands-on support for students working with AWS SageMaker, Athena, and Databricks to perform data \
+ analytics queries and implement data mining algorithms at scale. ",
+    },
+    {
+      title: " Graduate Teaching Assistant- Database Design",
+      company: "University of Sheffield",
+      duration: " Jan 2024-Jul 2024",
+      description:
+        "Guided students through the process of designing and implementing relational databases,common challenges related \
+ to large and heterogeneous datasets, such as transactional and geo-spatial data.",
+    },
+    {
+      title: "Graduate Teaching Assistant- Data Modelling and Storage",
+      company: "University of Sheffield",
+      duration: "Sep 2023-Jan 2024",
+      description:
+        "Supported teaching by preparing presentations on topics such as Database Normalisation, providing technical \
+ assistance to students during sessions on SQLite and Python integration, and addressing any questions. ",
+    },
+    {
+      title: "Software Engineer",
+      company: "Swig Solutions",
+      duration: "2015-2019",
+      description:
+        "Developed and deployed responsive, user-centric dynamic web applications using HTML, CSS, and JavaScript and \
+ React ",
     },
   ],
 };
@@ -68,24 +70,23 @@ const skills = {
     {
       title: "Languages & Frameworks",
       skills: [
-        "#HTML",
-        "#CSS",
+        "#Python",
+        "#PySpark",
         "#JavaScript",
         "#TypeScript",
         "#React.js",
         "#Next.js",
-        "#MUI",
         "#Node.js",
         "#Express.js",
       ],
     },
     {
       title: "Databases",
-      skills: ["#MongoDB", "#PostgreSQL", "#Firebase"],
+      skills: ["#PostgreSQL", "#SQLite"],
     },
     {
       title: "Others",
-      skills: ["#Git", "#Jest", "#CI/CD", "#AdobeXD"],
+      skills: ["#PyTorch", "#OpenCV","#AWS", "#TailwindCSS"],
     },
   ],
 };

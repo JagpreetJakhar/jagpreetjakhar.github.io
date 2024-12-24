@@ -1,9 +1,14 @@
 .contact {
   margin-top: 4rem;
   margin-bottom: 2rem;
+  align-items: center;
 }
 
 .contact .contact-me {
+  display: flex;              /* Add this to enable flexbox layout */
+  flex-direction: column;     /* Stack text and icon vertically */
+  justify-content: center;    /* Vertically center content */
+  align-items: center;        /* Horizontally center content */
   transition: all 0.2s ease-in-out;
 }
 

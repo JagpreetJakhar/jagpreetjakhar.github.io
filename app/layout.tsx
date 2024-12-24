@@ -1,6 +1,6 @@
 "use client";
 import "./globals.css";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import { ThemeProvider } from "@/context/ThemeContext";

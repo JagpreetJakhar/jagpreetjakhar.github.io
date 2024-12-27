@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.navbar {
+  position: relative;
+  z-index: 1000; /* Set to a high value */
+}
+
+.background {
+  position: absolute;
+  z-index: -1; /* Lower than navbar */
+}
+
 @font-face {
   font-family: 'MesloLGMDZNerdFontMono';
   src: url('/fonts/MesloLGMDZNerdFontMono-Regular.ttf') format('truetype'); /* Correct format */
@@ -12,20 +22,20 @@
 :root {
   --font-meslo-mono: 'MesloLGMDZNerdFontMono';
   /* Kanagawa Lotus Light Theme */
-  --light-theme-background: #dcd7ba; /* Gentle cream */
-  --light-theme-color: black; /* Warm taupe */
+  --light-theme-background:#F5E0DC28; /* Gentle cream */
+  --light-theme-color: #9F8170; /* Warm taupe */
   --light-theme-border: #dcd3c5; /* Soft beige-grey */
   --light-theme-accent-primary: #846b8c; /* Subtle plum */
   --light-theme-accent-secondary: #8296c8; /* Muted blue */
   --light-theme-highlight: #506d79; /* Deep teal */
 
   /* Kanagawa Dark Theme */
-  --dark-theme-background: #2C2C2B; /* Deep indigo */
+  --dark-theme-background: #181616; /* Deep indigo */
   --dark-theme-color: #D3D3D3; /* Warm beige */
   --dark-theme-border: #54546d; /* Smoky purple-grey */
   --dark-theme-accent-primary: #957fb8; /* Subdued purple */
   --dark-theme-accent-secondary: #7e9cd8; /* Gentle blue */
-  --dark-theme-highlight: #e46876; /* Rose red */
+  --dark-theme-highlight: #223249; /* Rose red */
 }
 
 /* Apply theme styles based on the `data-theme` attribute on the <html> element */

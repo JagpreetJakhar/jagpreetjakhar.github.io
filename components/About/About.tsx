@@ -17,6 +17,7 @@ const About: React.FC = () => {
 
   return (
     <section className="about" id="about">
+      <div className="max-w-3xl mx-auto p-4">
       <h1>{title}</h1>
       <p>{description}</p>
       <div className="about-links">
@@ -29,6 +30,7 @@ const About: React.FC = () => {
         <a href={cv} target="_blank" rel="noopener noreferrer">
           Download CV
         </a>
+      </div>
       </div>
     </section>
   );

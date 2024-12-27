@@ -1,9 +1,8 @@
 const about = {
-  title: "Hi 👋 , I am Jagpreet Jakhar",
+  title: "Hi 👋 , I am Jagpreet",
   description:
-    "I'm a Software Engineer with experience in creating and implementing front and back-end web applications,\
-   with an interest Machine Learning  in Non-Linear Dynamical Systems and Computer Vision.\
-  I have a Master's degree with distinction in Cybersecurity and Artificial Intelligence from the University of Sheffield, England",
+   "I am a skilled Software Engineer specializing in Computer Vision, with a focus on object detection, tracking, and motion planning.\
+    I hold a Master's degree with distinction in Cybersecurity and Artificial Intelligence from the University of Sheffield, England.",
   github: "https://github.com/JagpreetJakhar",
   linkedin: "https://www.linkedin.com/in/jagpreetjakhar/",
   cv: "/resume.pdf",
@@ -13,16 +12,37 @@ const projects = {
   title: "Projects",
   personalProjects: [
     {
+      title: "Football Analysis -- Coming Soon",
+      short:
+        "Using YOLOv11 and ByteTrack",
+      description:
+        "Analysing FA Cup Final 2023-24 using Object Detection, Tracking and \
+         Generating Statistics like Possession,Passing, and range of passes",
+      technologies: ["Python", "PyTorch","OpenCV"],
+      github: "https://github.com/JagpreetJakhar/football_analytics",
+      demo: "#",
+    },
+    {
       title: "Neural ODEs for Domain Wall Analysis",
       short:
-        "Features Firebase authentication, video upload, and video streaming.",
+        "Neural ODEs",
       description:
         "The study focuses on three distinct physical systems: the double pendulum, the Lorenz attractor, and the magnetic \
  domain wall problem. ",
-      technologies: ["#Python", "#PyTorch", "#PySpark", "#HPC"],
+      technologies: ["Python", "PyTorch", "PySpark"],
       github: "https://github.com/JagpreetJakhar/Dissertation",
       demo: "#",
-    }
+    },
+    {
+      title: "Coming Soon",
+      short:
+        "",
+      description:
+        "",
+      technologies: [],
+      github: "",
+      demo: "#",
+    },    
   ],
 };
 
@@ -70,23 +90,21 @@ const skills = {
     {
       title: "Languages & Frameworks",
       skills: [
-        "#Python",
-        "#PySpark",
-        "#JavaScript",
-        "#TypeScript",
-        "#React.js",
-        "#Next.js",
-        "#Node.js",
-        "#Express.js",
+        "Python",
+        "PySpark",
+        "PyTorch",
+        "JavaScript",
+        "TypeScript",
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Flask",
+        "Django"
       ],
     },
     {
-      title: "Databases",
-      skills: ["#PostgreSQL", "#SQLite"],
-    },
-    {
       title: "Others",
-      skills: ["#PyTorch", "#OpenCV","#AWS", "#TailwindCSS"],
+      skills: ["mlflow", "OpenCV","AWS","Airflow","Kafka","Docker","Terraform","PostgreSQL", "SQLite"],
     },
   ],
 };

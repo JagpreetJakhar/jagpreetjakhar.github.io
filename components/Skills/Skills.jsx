@@ -1,27 +1,33 @@
 import React from "react";
 import "./Skills.css";
 import { skills } from "../../data/portfolio";
-import getColorClass from "../../lib/utils/getColorClass";
+import { getIcon } from "../../lib/utils/getIcons"; // Import getIcon
+import {BackgroundGradient} from "@/components/background/background-gradient"
 const Skills = () => {
   const { title, mySkills } = skills;
+
   return (
-    <section className="skills" id="skills">
-      <h1>{title}</h1>
-      <div className="skills-container-grid">
-        {mySkills.map((skill, index) => (
-          <article className="skills-card" key={index}>
-            <h3 className="skills-title">{skill.title}</h3>
-            <div className="skills-stack">
-              {skill.skills.map((skill, index) => (
-                <span className={`${getColorClass(skill)}`} key={index}>
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </article>
-        ))}
-      </div>
-    </section>
+    <div className="max-w-3xl mx-auto p-4">
+      <section className="skills" id="skills">
+        <h1>{title}</h1>
+        <div className="skills-container-grid">
+          {mySkills.map((skillSet, index) => (
+            <article className="skills-card" key={index}>
+              <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-white dark:bg-zinc-900">
+              <h3 className="skills-title">{skillSet.title}</h3>
+              <div className="skills-stack">
+                {skillSet.skills.map((skill, index) => (
+                  <span key={index}>
+                    {getIcon(skill)}{skill}
+                  </span>
+                ))}
+              </div>
+              </BackgroundGradient>
+            </article>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

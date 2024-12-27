@@ -1,7 +1,9 @@
+"use client"
+import Link from "next/link";
+import { useTheme } from "@/context/ThemeContext";
+import { MdLightMode, MdNightlight, MdMenu, MdClose } from "react-icons/md";
 import React, { useState } from "react";
 import "./Navbar.css";
-import { MdLightMode, MdNightlight, MdMenu, MdClose } from "react-icons/md";
-import { useTheme } from "@/context/ThemeContext";
 
 const MobileMenu = () => {
   const { theme, toggleTheme } = useTheme();
@@ -23,16 +25,16 @@ const MobileMenu = () => {
               </div>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <Link href="/#projects">Projects</Link>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <Link href="/#experience">Experience</Link>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <Link href="/#skills">Skills</Link>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <Link href="/#contact">Contact</Link>
             </li>
             <li>
               <a onClick={toggleTheme}>
@@ -52,7 +54,7 @@ const MobileMenu = () => {
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
-  const logo = "{}.";
+  const logo = "{#}";
 
   return (
     <header>
@@ -64,16 +66,22 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="nav-list">
           <li>
-            <a href="#projects">Projects</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <Link href="/#projects">Projects</Link>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <Link href="/#experience">Experience</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link href="/#skills">Skills</Link>
+          </li>
+          <li>
+            <Link href="/blogs">Blogs</Link>
+          </li>
+          <li>
+            <Link href="/#contact">Contact</Link>
           </li>
           <li>
             <a onClick={toggleTheme}>

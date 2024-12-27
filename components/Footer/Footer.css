@@ -1,12 +1,15 @@
-footer {
-  margin-top: 4rem;
-  padding-bottom: 2rem;
-}
-
-footer p {
+/* Footer container styling */
+.footer-container {
+  background-color: var(--dark-theme-background);
+  color: var(--dark-theme-color);
+  padding: 1rem;
   text-align: center;
+  border-top: 2px solid var(--dark-theme-border);
 }
 
-footer p span {
-  font-weight: 700;
+/* Footer text */
+.footer-text {
+  font-size: 1rem;
+  color: var(--dark-theme-color);
+  margin: 0;
 }

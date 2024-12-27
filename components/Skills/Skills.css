@@ -2,6 +2,20 @@
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
+.skills  h1 {
+  margin-top: 2rem;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+  font-size: 2rem; /* Larger font size */
+  font-weight: 700;
+  border-bottom: 3px solid; /* Optional underline effect */
+  padding-bottom: 0.5rem; 
+}
+.skills-stack span svg {
+  width: 20px; /* or any size you need */
+  height: 20px; /* or any size you need */
+}
 
 .skills-container-grid {
   margin-top: 2rem;
@@ -12,10 +26,8 @@
 
 .skills-container-grid .skills-card {
   border-radius: 5px;
-  padding: 20px;
+  padding: 0px;
   transition: all 0.2s ease-in-out;
-  border-radius: 5px;
-  border: 1px solid;
   position: relative;
   overflow: hidden;
 }

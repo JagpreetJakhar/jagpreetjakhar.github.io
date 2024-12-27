@@ -14,7 +14,7 @@ const Projects = () => {
         <div className="container-grid">
         
           {personalProjects.map((project, index) => (
-            <BackgroundGradient className="rounded-[25px] bg-white dark:bg-zinc-900">
+            <BackgroundGradient key={index} className="rounded-[25px] bg-white dark:bg-zinc-900">
             <article className="project-card" key={index}>
               
               <h3 className="project-title">{project.title}</h3>

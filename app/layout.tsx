@@ -27,15 +27,15 @@ export default function RootLayout({
     <html lang="en">
       <body>
       <ClientWrapper>
-      <BackgroundBeams />
+      
           <div id="root">
             <Navbar />
             <FloatingNav navItems={navItems} />
             <main>
-              
               {children}</main>
             <Footer />
           </div>
+          <BackgroundBeams />
           </ClientWrapper>
           <Analytics />
         <SpeedInsights />

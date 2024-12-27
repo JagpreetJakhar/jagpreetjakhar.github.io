@@ -13,7 +13,7 @@ const Experience = () => {
       <div className="experience-container-grid">
       
         {experiences.map((experience, index) => (
-         <BackgroundGradient className="rounded-[22px] bg-black dark:bg-zinc-900">
+         <BackgroundGradient key={index} className="rounded-[22px] bg-black dark:bg-zinc-900">
           <article className="experience-card" key={index}>
              
             <div className="job-title-duration-section">

@@ -2,6 +2,7 @@ import "./globals.css";
 import ClientWrapper from "@/components/ClientWrapper/ClientWrapper";
 import {BackgroundBeams} from '@/components/background/background'
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react"
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import FloatingNav from "@/components/Navbar/FloatingNav";
@@ -22,6 +23,7 @@ export default function RootLayout({
   ];
 
   return (
+    
     <html lang="en">
       <body>
       <ClientWrapper>
@@ -35,6 +37,7 @@ export default function RootLayout({
             <Footer />
           </div>
           </ClientWrapper>
+          <Analytics />
         <SpeedInsights />
       </body>
     </html>

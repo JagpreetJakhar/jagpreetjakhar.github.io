@@ -1,17 +1,16 @@
 "use client";
 
 import React from "react";
-import {BackgroundGradient} from "@/components/background/background-gradient"
+
 import Projects from "@/components/Projects/Projects";
 import Skills from "@/components/Skills/Skills";
 import Contact from "@/components/Contact/Contact";
 import About from "@/components/About/About";
 import Experience from "@/components/Experience/Experience";
-
+import {BackgroundGradient} from "@/components/background/background-gradient"
 export default function Home() {
   return (
     <div>
-      
       <section id="about">
         <About />
       </section>

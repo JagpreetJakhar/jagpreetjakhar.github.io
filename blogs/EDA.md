@@ -1,5 +1,6 @@
 ---
-title: Eda
+title: "Exploratory Data Analysis Chapter 1"
+date: "11 January 2023"
 marimo-version: 0.16.2
 width: medium
 ---
